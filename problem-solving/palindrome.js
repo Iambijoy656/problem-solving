@@ -21,4 +21,4 @@ function palindrome(str) {
 
 }
 
-console.log(palindrome("race _car"))
+console.log(palindrome("amanaplanacanalpanama"))

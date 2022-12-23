@@ -18,7 +18,7 @@ function reverseInt(num) {
         reverseNum = '-' + reverseNum.slice(0, reverseNum.length - 1)
     }
 
-    reverseNum = (parseInt(reverseNum));
+    reverseNum = (parseInt(reverseNum, 10));
     return reverseNum;
 }
 
@@ -26,3 +26,4 @@ console.log(reverseInt(-90))
 console.log(reverseInt(188))
 console.log(reverseInt(500))
 console.log(reverseInt(189) === 981)
+console.log(reverseInt(1534236469) === 9646324351)
