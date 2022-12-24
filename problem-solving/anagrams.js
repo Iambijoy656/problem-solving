@@ -27,6 +27,10 @@ function isAnagram(s, t) {
         frequency2[elm] = (frequency2[elm] || 0) + 1;
     }
 
+    if (Object.keys(frequency1).length !== Object.keys(frequency2).length) {
+        return false;
+    }
+
     for (let key in frequency1) {
         if (frequency1[key] !== frequency2[key] || !key in frequency2) {
             return false;
