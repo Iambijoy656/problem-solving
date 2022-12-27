@@ -15,7 +15,11 @@
 
 function isAnagram(s, t) {
     const normalizationS = s.replace(/[^\w]/g, '').toLowerCase();
+
     const normalizationT = t.replace(/[^\w]/g, '').toLowerCase();
+
+
+
 
     const frequency1 = {}
     const frequency2 = {}
@@ -42,4 +46,4 @@ function isAnagram(s, t) {
     console.log(frequency1, frequency2);
 }
 
-console.log(isAnagram('rail safety', 'fairy tales'))
+console.log(isAnagram('ra&%il safety', 'fairy tales'))
