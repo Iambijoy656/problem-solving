@@ -17,7 +17,7 @@
 // Input: nums = [5,4,-1,7,8]
 // Output: 23
 
-
+// kadane's algorithm
 var maxSubArray = function (nums) {
     let current_sum = nums[0]
 
@@ -40,4 +40,3 @@ console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 // [-2, 4] cur_sum = 4
 // [-2, 4] cur_sum = 4
 // [4,-1] cur_sum = 3
-// kadane's algorithm
