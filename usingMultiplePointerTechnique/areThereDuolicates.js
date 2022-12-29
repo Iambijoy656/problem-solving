@@ -2,6 +2,7 @@
  * Write a function called areThereDuplicates which accepts a sorted array of integers
  * The function should  return true if there is any duplicates and false if there is no duplicates
  */
+// similar problem 287 leetcode
 
 function areThereAnyDuplicates(arr) {
     let i = 0;

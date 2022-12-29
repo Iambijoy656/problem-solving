@@ -14,13 +14,21 @@ function palindrome(str) {
     const normalizeStr = str.toLowerCase().replace(re, '');
     console.log(normalizeStr)
 
-    const reverseStr = normalizeStr.split('').reverse().join('')
-    console.log(reverseStr);
+    let left = 0;
+    let right = normalizeStr.length - 1;
 
-    return normalizeStr === reverseStr;
+    while (left < right) {
+        if (normalizeStr[left] !== normalizeStr[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    return true;
 
 }
 
 console.log(palindrome("amanaplanacanalpanama"))
 console.log(palindrome("A man, a plan, a canal: Panama"))
 console.log(palindrome("race a car"))
+console.log(palindrome(" "))
