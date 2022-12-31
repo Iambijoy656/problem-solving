@@ -29,7 +29,9 @@ var minSubArrayLen = function (target, nums) {
         while (val_sum >= target) {
             result = Math.min(result, i + 1 - left)
             val_sum -= nums[left]
+            console.log(left)
             left++;
+            console.log(left)
         }
 
 
@@ -42,6 +44,7 @@ var minSubArrayLen = function (target, nums) {
 
 console.log(minSubArrayLen(7, [2, 3, 1, 2, 4, 3]));
 console.log(minSubArrayLen(11, [1, 1, 1, 1, 1, 1, 1, 1]));
+console.log(minSubArrayLen(4, [1, 4, 4]));
 
 
 // [2, 3, 1, 3, 4, 3]  //i+1 -l = 4-0 = 4         minLength = 2
