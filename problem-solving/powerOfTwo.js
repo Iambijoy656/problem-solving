@@ -36,15 +36,6 @@ var isPowerOfTwo = function (n) {
 };
 console.log(isPowerOfTwo(16))
 
-
-
-// Without loop/ recu
-
-
-
-
-
-
 // console.log(16 % 2)
 // console.log(8 % 2)
 // console.log(4 % 2)
@@ -62,3 +53,38 @@ console.log(isPowerOfTwo(16))
     4/2 = 2
     2/2 = 1
  */
+
+
+
+// Without loop/ recursion or Bitwise solution
+var isPowerOfTwo = function (n) {
+    if (n < 1) {
+        return false;
+    }
+    return (n & (n - 1)) === 0;
+
+
+};
+console.log(isPowerOfTwo(16))
+
+//-------------------Explanation----------------
+//     8 & 7
+//     8 = 1000(binary)
+//     7 = 0111(binary)
+//Ans: 0 = 0000(0 and 1 er modde 0 piroty pabe always)
+
+//     11 & 11
+//     11 = 1011(binary)
+//     11 = 1011(binary)
+//Ans: 0 = 0000(0 and 1 er modde 0 piroty pabe always)
+
+
+// if 2^n & 2^n-1 = 0
+// example:
+// console.log(8 & 7);
+// console.log(16 & 15);
+// console.log(32 & 31);
+
+
+
+
