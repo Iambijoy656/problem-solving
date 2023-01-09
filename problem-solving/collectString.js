@@ -2,7 +2,6 @@
 
 
 //helper method recursion
-
 function collectString(obj) {
     let stringsArr = []
 
@@ -15,7 +14,6 @@ function collectString(obj) {
             }
 
         }
-
 
     }
     gatherString(obj)
